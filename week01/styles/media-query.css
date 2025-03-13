@@ -1,11 +1,10 @@
 /* Importing Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.google.com/specimen/Roboto');
 
 /* Body rule with Roboto font */
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+    
 }
 
 /* Header, main, and footer styling */
@@ -14,16 +13,16 @@ header, main, footer {
     margin: 1rem auto;
     padding: 1rem;
     border: 1px solid rgba(0, 0, 255, 0.2);  /* Faint border */
-    background-color: #ADD8E6;  /* Light blue background color */
+    background-color: #ADD8E6; 
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    gap: 1rem;
 }
 
-section {
+main section {
     padding: 1rem;
     background-color: #fff;
 }

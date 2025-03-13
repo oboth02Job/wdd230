@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+    /* Navigation - Flexbox */
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    /* Two Column Grid for Main Content */
+    main {
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Information (1fr), Learning Activities (2fr) */
+        gap: 20px;
+    }
+}
