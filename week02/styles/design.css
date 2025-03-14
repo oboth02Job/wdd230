@@ -20,6 +20,13 @@ h1 {
 
 main {
 	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+main > h2 {
+	grid-column: span 2;
+	text-align: center;
 }
 
 h2 {
@@ -44,5 +51,5 @@ footer {
 	margin-top: 1rem;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	font-size: smaller;
-	text-align: right;
+	text-align: left;
 }
