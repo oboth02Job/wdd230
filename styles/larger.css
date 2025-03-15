@@ -27,11 +27,28 @@
         margin: 0 15px;
     }
 
+    @media (min-width: 768px) {
+        .grid-container {
+          display: flex;                  /* Use flexbox for larger screens */
+          justify-content: space-between;  /* Space between the two sections */
+        }
+      
+        .learning-activities {
+          width: 40%;                      /* Left section takes up 40% of the space */
+          margin-bottom: 0;                /* No space below on large screens */
+        }
+      
+        .information-card {
+          width: 55%;                      /* Right section takes up 55% of the space */
+        }
+      }
+ 
+
     /* Two Column Grid for Main Content */
     main {
         max-width: 900px;
         display: grid;
-        grid-template-columns: 1fr 2fr; /* Information (1fr), Learning Activities (2fr) */
+        grid-template-columns: 1fr 1fr; /* Information (1fr), Learning Activities (2fr) */
         gap: 20px;
     }
 }

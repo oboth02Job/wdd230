@@ -13,8 +13,36 @@ body {
     padding: 20px;
     display: flex;
     align-items: center;
-}
+}  
 
+.grid-container {
+    padding: 20px;
+    display: block; /* Default to block layout (stacked vertically) */
+  }
+
+  .learning-activities {
+    width: 100%;                      /* Full width for smaller screens */
+    margin-bottom: 20px;               /* Space below the learning activities section */
+  }
+
+  .learning-activities ul {
+    list-style-type: none;             /* Remove default list styles */
+    padding: 0;
+  }
+  
+  .learning-activities li {
+    margin-bottom: 10px;               /* Add space between the list items */
+  }
+  
+  /* Styling for the information card */
+  .information-card {
+    width: 100%;                      /* Full width for smaller screens */
+    padding: 20px;
+    border: 1px solid #ddd;          /* Add a border around the information card */
+    border-radius: 8px;              /* Optional: Rounded corners for the card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+  }
+  
 
 nav ul {
     list-style: none;
@@ -22,8 +50,9 @@ nav ul {
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     background-color: aqua;
+    gap: 10px;
 }
 
 nav ul li a {
