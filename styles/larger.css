@@ -49,6 +49,5 @@
         max-width: 900px;
         display: grid;
         grid-template-columns: 1fr 1fr; /* Information (1fr), Learning Activities (2fr) */
-        gap: 20px;
     }
 }

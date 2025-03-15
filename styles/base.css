@@ -84,10 +84,6 @@ main {
     position: absolute;;
 }
 
-.grid-container {
-    position: center;
-}
-
 .profile-img {
     width: 100px;
     margin-right: 25px;
