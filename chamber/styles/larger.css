@@ -1,0 +1,18 @@
+/* Styles for large screen */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none; /* Hide hamburger button on large screens */
+    }
+
+    .nav-menu {
+        display: block; /* Show the menu items on large screens */
+    }
+
+    .nav-menu ul {
+        display: flex; /* Horizontal layout */
+    }
+
+    .nav-menu li {
+        margin-right: 20px;
+    }
+}
