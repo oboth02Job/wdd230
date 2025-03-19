@@ -7,20 +7,20 @@
     <meta name="author" content="Job Oboth">
     <title> Masaka City Chamber of Commerce </title>
     <link rel="icon" type="images/png" href="images/favicon.png">
-     <meta property="og:title" content="Masaka City Chamber of Commerce" />
-     <meta property="og:type" content="website" />
-     <meta property="og:image" content="https://github.com/oboth02Job/wdd230/blob/main/chamber/Masaka.png?raw=true" />
-     <meta property="og:url" content="https://github.com/oboth02Job/wdd230/tree/main/chamber" />
+     <meta property="og:title" content="Masaka City Chamber of Commerce">
+     <meta property="og:type" content="website">
+     <meta property="og:image" content="https://github.com/oboth02Job/wdd230/blob/main/chamber/Masaka.png?raw=true">
+     <meta property="og:url" content="https://github.com/oboth02Job/wdd230/tree/main/chamber">
 
-     <link rel="stylesheet" href="href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
      <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
  </head>
 
 <body>
     <header class="hero">
-        <h1>Masaka Chamber Of Commerce</h1>
-        <p>Connecting Businesses and Communities</p>
+        <h1>Masaka City Chamber Of Commerce</h1>
+        <p><strong>Connecting Businesses and Communities</strong></p>
         <a href="Join.html" class="cta button">Join the Chamber
 </a>
 
@@ -41,28 +41,28 @@
 </header>
 
     <main>
-        <section class="events"></section>
-        <h2>Upcoming Events</h2>
+        <section class="events">
+        <h2>Current Events</h2>
         <ul>
             <li>Business Networking - April 25</li>
             <li>Entrepreneur Workshop - May 14</li>
             <li>Digital Marketing Bootcamp - June 19</li>
             <li>Community Business Expo July 09</li>
         </ul>
-
-        <section class="weather"></section>
-        <h2>Current Weather</h2>
-        <div class="waether-card"></div>
+        </section>
+        
+        <section class="Weather">
+        <h2>Weather</h2>
         <p id="city">Loading...</p>
         <p id="temperature"></p>
         <p id="description"></p>
+        </section>
 
         <section class="spotlight">
-        <h2>Featured Businesses</h2>
-        <div class="company">
-            <h3>Hope Tech Solutions</h3>
-            <p>Innovating the future of business technology</p>
-        </div>
+        <h2>Company Spotlights</h2>
+        <h3>Hope Tech Solutions</h3>
+        <p>Innovating the future of business technology</p>
+        
 
         <div class="company">
             <h3>Green Earth Landscape</h3>
@@ -89,7 +89,6 @@
                 <p>Last Modified: <span id="last-modified-date"></span></p>
             </div>
     </footer>
-
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
 </body>

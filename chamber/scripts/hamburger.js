@@ -1,8 +1,11 @@
-// Get the hamburger button and the menu
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
 
-// Toggle the navigation menu on click
+
+// Get the hamburger button and the nav menu
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+// Add event listener to toggle the active class on click
 hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active'); // Add/remove "active" class
+    navMenu.classList.toggle('active');
 });
+
