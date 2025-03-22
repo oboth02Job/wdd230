@@ -1,0 +1,25 @@
+.hero-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 960px;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    white-space: nowrap; /* Prevents text wrapping */
+  }

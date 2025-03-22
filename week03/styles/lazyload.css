@@ -1,0 +1,34 @@
+img {
+    display: block;
+}
+
+/* Container to prevent layout shifts */
+.image-container {
+    width: 400px;
+    height: 400px;
+    background-color: black; /* black background ensures fade effect */
+    overflow: hidden;
+    margin: 20px auto; /* centering */
+}
+
+/* image styling */
+.fade-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0; /* start fully hidden */
+    animation: fadeFromBlack 2s ease-in-out forwards; /* apply animation */
+}
+
+/* Fade-from-black animation */
+@keyframes  fadeFromBlack {
+    0% {
+        opacity: 0;
+        filter: brightness(0);
+
+    }
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
