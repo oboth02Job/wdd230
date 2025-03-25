@@ -1,0 +1,28 @@
+
+/* Basic dark mode styling */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode a {
+    color: #ffffff;
+}
+
+/* Hamburger Button Style */
+.hamburger {
+    cursor: pointer;
+    display: none; /* Only show on mobile */
+}
+
+.hamburger.open {
+    transform: rotate(90deg); /* You can add animation for X */
+}
+
+/* Show hamburger only on mobile view */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+}
+

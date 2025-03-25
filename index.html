@@ -6,98 +6,99 @@
     <meta name="description" content="WDD 230 Web Frontend, Job Oboth, course assignment portal">
     <meta name="author" content="Job Oboth">
     <title> Job Oboth - WDD 230 - Web Frontend Development </title>
-    <link rel="icon" type="images/png" href="images/hfavicon.png">
+    <link rel="icon" type="image/png" href="images/hfavicon.png">
     <meta property="og:title" content="Masaka City Chamber of Commerce">
-     <meta property="og:type" content="website">
-     <meta property="og:image" content="https://github.com/oboth02Job/wdd230/blob/main/media.png">
-     <meta property="og:url" content="https://github.com/oboth02Job/wdd230">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/oboth02Job/wdd230/blob/main/media.png">
+    <meta property="og:url" content="https://github.com/oboth02Job/wdd230">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="week03/styles/responsive-images.css">
-    
+    <link rel="stylesheet" href="styles/darkmode.css">
 </head>
 <body>
     <header class="header">
         <img src="images/profile.webp" alt="Job Oboth" class="profile-img">
         <span class="profile-name">Job Oboth</span>
     </header>
-    <nav><ul class="nav-menu">
-        <li><a href=""> Home</a></li>
-        <li><a href="">Chamber</a></li>
-        <li><a href="">Site Plan</a></li>
-        <li><a href="">Form</a></li>
-   </ul>
-</nav>
+
+    <!-- Hamburger Button -->
+    <button class="hamburger" id="hamburger-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <nav>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
 
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
         <section>
-            
-
             <div class="learning-activities">
-                
-            <h2>Learning Activities</h2>
-            <ul>
-                <li><a href="">Week 01:</a></li>
-                <li><a href="">Week 02:</a></li>
-                <li><a href="">Week 03:</a></li>
-                <li><a href="">Week 04:</a></li>
-                <li><a href="">Week 05:</a></li>
-                <li><a href="">Week 06:</a></li>
-                
-            </ul>
+                <h2>Learning Activities</h2>
+                <ul>
+                    <li><a href="#">Week 01:</a></li>
+                    <li><a href="#">Week 02:</a></li>
+                    <li><a href="#">Week 03:</a></li>
+                    <li><a href="#">Week 04:</a></li>
+                    <li><a href="#">Week 05:</a></li>
+                    <li><a href="#">Week 06:</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="information-card">
+            <div>
+                <h2>Information</h2>
+                <p>Current Weather: <span id="weather">Loading...</span></p>
+                <p>Visit count: <span id="visit-count">0</span></p>
+                <p>Today's Date: <span id="current-date"></span></p>
+            </div>
+        </section>
+
+        <div class="hero-container">
+            <picture>
+                <source srcset="/week03/temple-mobile.webp" media="(max-width: 600px)" type="image/webp">
+                <source srcset="/week03/temple-large.webp" media="(min-width: 601px)" type="image/webp">
+                <img src="/week03/temple-large.webp.webp" alt="Brigham City Utah Temple" width="960" height="540">
+            </picture>
+            <div class="overlay-text">Brigham City Utah Temple</div>
         </div>
-</section>
 
+        <!--Overlay-Label-->
+        <p><a href="week03/lazyload.html"> View image lazy loading</a></p>
 
-<section class="information-card">
-    <div>
-    <h2>Information</h2>
-    <p>Current Weather: <span id="weather">Loading...</span></p>
-    <p>Visit count: <span id="visit-count">0</span></p>
-    <p>Today's Date: <span id="current-date"></span></p>
-</div>
-
-</section>
-
-    <div class="hero-container">
-    <picture>
-      <!-- Mobile Image (Portrait 400px) -->
-      <source srcset="/week03/temple-mobile.webp" media="(max-width: 600px)" type="image/webp">
-      
-      <!-- Larger Image (Landscape 960px) -->
-      <source srcset="/week03/temple-large.webp" media="(min-width: 601px)" type="image/webp">
-  
-      <!-- Fallback Image -->
-      <img src="/week03/temple-large.webp.webp" alt="Brigham City Utah Temple" width="960" height="540">
-    </picture>
-
-    <div class="overlay-text">Brigham City Utah Temple</div>
-</div>
-      
-      <!--Overlay-Label-->
-<p><a href= "week03/lazyload.html"> View image lazy loading</a></p>
-
-<iframe
- src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63835.8996115144!2d31.67933987706764!3d-0.35036080048097396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19d78e9710fa0cd3%3A0x3f370f3a43d14b0e!2sMasaka!5e0!3m2!1sen!2sug!4v1742611517496!5m2!1sen!2sug"
-  width="400" 
-  height="300" 
-  style="border:0;" 
-  allowfullscreen="" 
-  loading="lazy" 
-  referrerpolicy="no-referrer-when-downgrade" title="google maps location of Masaka"
- ></iframe>
-
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63835.8996115144!2d31.67933987706764!3d-0.35036080048097396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19d78e9710fa0cd3%3A0x3f370f3a43d14b0e!2sMasaka!5e0!3m2!1sen!2sug!4v1742611517496!5m2!1sen!2sug"
+            width="400"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="google maps location of Masaka">
+        </iframe>
     </main>
+
     <footer>
-        <p>© 2025 <span id="year"></span>
-        Job, Uganda </p>
+        <p>© 2025 <span id="year"></span> Job, Uganda </p>
         <p id="lastModified"></p>
-</footer>
+    </footer>
 
     <script src="scripts/getDates.js"></script>
-
-
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/hamburger.js"></script>
 </body>
 </html>
+
+
+
+
+
