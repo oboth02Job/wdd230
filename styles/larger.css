@@ -50,4 +50,54 @@
         display: grid;
         grid-template-columns: 1fr 1fr; /* Information (1fr), Learning Activities (2fr) */
     }
+
+    /* Hide hamburger menu by default (on larger screens) */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.hamburger .close-btn {
+  display: none;
+  font-size: 2rem; /* Size of the "X" */
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Show hamburger menu only on screens 600px or smaller (mobile view) */
+@media screen and (max-width: 600px) {
+  .hamburger {
+      display: block; /* Show hamburger button */
+  }
+  
+  .hamburger.active .bar {
+      display: none; /* Hide hamburger bars when the menu is open */
+  }
+
+  .hamburger.active .close-btn {
+      display: block; /* Show close button (X) when the menu is open */
+  }
+
+  .nav-menu {
+      display: none; /* Hide navigation menu on mobile */
+  }
+
+  .nav-menu.active {
+      display: block; /* Show navigation menu when active */
+  }
+}
+
+/* Ensure the navigation menu is visible on larger screens */
+@media screen and (min-width: 601px) {
+  .nav-menu {
+      display: flex; /* Show navigation menu as a horizontal row */
+  }
+}
+
 }

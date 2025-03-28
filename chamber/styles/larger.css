@@ -15,4 +15,14 @@
     .nav-menu li {
         margin-right: 20px;
     }
+
+    /* Hover effect for gallery images */
+    .gallery .image-container img {
+        transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
+    }
+
+    .gallery .image-container img:hover {
+        transform: scale(1.1); /* Slightly zoom in on hover */
+        filter: brightness(0.8); /* Darken the image on hover */
+    }
 }

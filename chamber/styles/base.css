@@ -86,3 +86,16 @@ h1 {
     opacity: 1;
 }
 
+figure {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+    font-weight: bold;
+}
+

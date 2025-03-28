@@ -1,0 +1,13 @@
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode a {
+    color: #ddd;
+}
+
+body.dark-mode header {
+    background-color: #222;
+}
