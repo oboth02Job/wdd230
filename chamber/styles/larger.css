@@ -2,6 +2,7 @@
 @media (min-width: 768px) {
     .hamburger {
         display: none; /* Hide hamburger button on large screens */
+        cursor: pointer;
     }
 
     .nav-menu {
@@ -24,5 +25,17 @@
     .gallery .image-container img:hover {
         transform: scale(1.1); /* Slightly zoom in on hover */
         filter: brightness(0.8); /* Darken the image on hover */
+    }
+}
+/* For larger screens, display the navigation menu as horizontal */
+@media screen and (min-width: 601px) {
+    .nav-menu {
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+    }
+
+    .nav-menu li {
+        margin-right: 20px;
     }
 }

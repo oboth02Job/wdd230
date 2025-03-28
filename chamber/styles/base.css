@@ -34,12 +34,18 @@ h1 {
     color: #f24236;
 }
 
-/* Styles for mobile screens */
-@media (max-width: 767px) {
+
+@media screen and (max-width: 600px) {
     .hamburger {
         display: block; /* Show hamburger button on mobile */
-        font-size: 30px;
-        cursor: pointer;
+    }
+
+    .nav-menu {
+        display: none; /* Hide the menu by default on mobile */
+    }
+
+    .nav-menu.active {
+        display: block; /* Show the menu when toggled on mobile */
     }
 }
 
@@ -81,7 +87,6 @@ h1 {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
-
 .gallery img.lazyloaded {
     opacity: 1;
 }
@@ -93,8 +98,8 @@ figure {
 }
 
 figcaption {
-    font-size: 14px;
-    color: #333;
+    font-size: 16px;
+    color: white;
     margin-top: 5px;
     font-weight: bold;
 }
