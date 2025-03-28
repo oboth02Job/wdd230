@@ -97,6 +97,10 @@ figure {
     text-align: center;
 }
 
+.sidebar{
+    color: #f24236;
+    font-size: 18px;
+}
 figcaption {
     font-size: 16px;
     color: white;

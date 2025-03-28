@@ -37,3 +37,4 @@ function lazyLoadImages() {
 window.addEventListener('scroll', lazyLoadImages);
 window.addEventListener('resize', lazyLoadImages);
 lazyLoadImages();
+
