@@ -70,13 +70,14 @@
                 <input type="text" id="business-name" name="business-name" required placeholder="Business Name">
 
                 <!-- Membership Level -->
-                <label for="membership-level">Membership Level:</label>
-                <select id="membership-level" name="membership-level" required>
-                    <option value="NP">NP Membership (Non-profit, no fee)</option>
+                <select name="membership" id="membership" required>
+                    <option value="" disabled selected>Select a Membership Level</option>
+                    <option value="NP">NP Membership (No fee)</option>
                     <option value="Bronze">Bronze Membership</option>
                     <option value="Silver">Silver Membership</option>
                     <option value="Gold">Gold Membership</option>
                 </select>
+                
 
                 <!-- Description -->
                 <label for="description">Business/Organization Description:</label>
