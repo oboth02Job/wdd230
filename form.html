@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Oboth - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <img src="images/profile.webp" alt="Job Oboth" class="profile-img" width="200">
+        <span class="profile-name">Job Oboth</span>
+</header>
+
+    <nav>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+</nav>
+
+<main>
+    <form action="record.html" method="get" id="registration-form">
+        <fieldset>
+          <legend>Registration Form</legend>
+  
+          <!-- Username -->
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+  
+          <!-- Password -->
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 characters long and alphanumeric.">
+  
+          <!-- Password Confirmation -->
+          <label for="password-confirmation">Confirm Password</label>
+          <input type="password" id="password-confirmation" name="password-confirmation" required>
+  
+          <!-- Email -->
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu" title="Please enter a valid BYUI email address.">
+  
+          <!-- Page Rating -->
+          <label for="page-rating">Page Rating</label>
+          <input type="range" id="page-rating" name="page-rating" min="1" max="10" step="1" oninput="updateRating(this.value)">
+          <span id="rating-value">5</span> <!-- Display range value -->
+  
+          <!-- Submit Button -->
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+  
+</main>
+
+    <footer>
+        <p>© 2025 <span id="year"></span> Job, Uganda </p>
+        <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
