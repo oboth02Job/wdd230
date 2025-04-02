@@ -1,0 +1,56 @@
+{
+    "wardMembers": [
+      {
+        "familyName": "Oboth",
+        "moveInDate": "2025-03-15",
+        "numberOfPeopleInFamily": 4,
+        "visitedByBishopric": true,
+        "familyMembers": [
+          {
+            "name": "Job Oboth",
+            "gender": "Male",
+            "birthdate": "1985-05-12"
+          },
+          {
+            "name": "Kevin Kirabo",
+            "gender": "Female",
+            "birthdate": "1987-09-22"
+          },
+          {
+            "name": "Ethan Smith",
+            "gender": "Male",
+            "birthdate": "2012-02-28"
+          },
+          {
+            "name": "Emma Smith",
+            "gender": "Female",
+            "birthdate": "2015-11-04"
+          }
+        ]
+      },
+      {
+        "familyName": "Johnson",
+        "moveInDate": "2025-03-20",
+        "numberOfPeopleInFamily": 3,
+        "visitedByBishopric": false,
+        "familyMembers": [
+          {
+            "name": "Michael Johnson",
+            "gender": "Male",
+            "birthdate": "1980-07-17"
+          },
+          {
+            "name": "Sarah Johnson",
+            "gender": "Female",
+            "birthdate": "1982-11-03"
+          },
+          {
+            "name": "Lucas Johnson",
+            "gender": "Male",
+            "birthdate": "2010-06-11"
+          }
+        ]
+      }
+    ]
+  }
+  
