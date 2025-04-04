@@ -163,3 +163,36 @@ footer {
   font-size: 25px;
   color: #333;
 }
+
+/* Ensures the hero image is responsive */
+.hero-container {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Positioning the overlay text */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional: Makes the text more readable */
+  text-align: center;
+  width: 90%; /* To ensure text doesn't overflow */
+}
+
+@media (max-width: 600px) {
+  .overlay-text {
+      font-size: 1.5em; /* Adjust text size for mobile */
+  }
+}
+
