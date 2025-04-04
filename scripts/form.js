@@ -19,4 +19,17 @@
             document.getElementById('password').style.borderColor = '';
             document.getElementById('password-confirmation').style.borderColor = '';
         }
+
+    // Function to update the range value dynamically
+    function updateRating(value) {
+        document.getElementById('rating-value').textContent = value;
+    }
+
+    // Set initial value for range
+    document.getElementById('page-rating').value = 5;
+    updateRating(5); // Initial rating display
+
     });
+
+
+
