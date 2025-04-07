@@ -187,3 +187,66 @@ input[type="submit"]:hover {
         display: none;
     }
 }
+
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  button {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #members-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .member-card, .member-list-item {
+    background: green;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .member-card img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 20px;
+  }
+  
+  .member-card .info, .member-list-item .info {
+    display: inline-block;
+  }
+  
+  .member-card {
+    width: 250px;
+  }
+  
+  .member-list-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grid-view .member-card {
+    width: 250px;
+  }
+  
+  .list-view .member-list-item {
+    flex-direction: column;
+  }
+  
