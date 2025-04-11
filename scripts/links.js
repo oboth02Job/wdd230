@@ -1,4 +1,4 @@
-fetch('data/links.json')
+fetch('data/scripts/links.json')
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('weeks-container');
@@ -30,3 +30,12 @@ fetch('data/links.json')
   });
 
   const baseURL = "https://github.com/oboth02Job/wdd230"
+ const linksURL = "https://github.com/oboth02Job/wdd230/blob/main/data/scripts/links.json"
+
+ async function getLinks() {
+  const response = await fetch(linksURL);
+  const data = await response.json();
+  console.log(data);
+ }
+
+ getLinks();

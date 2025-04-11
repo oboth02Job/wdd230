@@ -4,12 +4,16 @@
         "week": "Week 1",
         "links": [
           {
-            "url": "week01/activity1.html",
-            "title": "HTML Structure Practice"
+            "url": "week01/chamber-site-plan.html",
+            "title": "Site plan"
           },
           {
-            "url": "week01/activity2.html",
-            "title": "CSS Introduction"
+            "url": "week01/holygrail.html",
+            "title": "Holy Grail"
+          },
+          {
+            "url": "week01/media-query.html",
+            "title": "Media Query"
           }
         ]
       },
@@ -17,38 +21,44 @@
         "week": "Week 2",
         "links": [
           {
-            "url": "week02/activity1.html",
-            "title": "Flexbox Layout"
+            "url": "week02/design.html",
+            "title": "Design"
           },
           {
-            "url": "week02/activity2.html",
-            "title": "Responsive Design"
+            "url":"week02/bom.html",
+            "title":"BOM"
           }
+          
         ]
       },
       {
         "week": "Week 3",
         "links": [
           {
-            "url": "week03/activity1.html",
-            "title": "JavaScript Basics"
+            "url": "week03/landscape.webp",
+            "title": "WebP"
           },
           {
-            "url": "week03/activity2.html",
-            "title": "DOM Manipulation"
+            "url": "week03/lazyload.html",
+            "title": "Lazy"
+          },
+          {
+            "url": "week03/responsive-images.html",
+            "title": "Responsive"
           }
+          
         ]
       },
       {
         "week": "Week 4",
-        "links": [
+          "links":[
           {
-            "url": "week04/activity1.html",
-            "title": "Events and Listeners"
+            "url": "week04/tablebuild.html",
+            "title": "Tablebuild"
           },
           {
-            "url": "week04/activity2.html",
-            "title": "Forms and Validation"
+            "url": "form.html",
+            "title": "Form"
           }
         ]
       },
@@ -56,12 +66,12 @@
         "week": "Week 5",
         "links": [
           {
-            "url": "week05/activity1.html",
-            "title": "JSON and Fetch API"
+            "url": "chamber/week05/new-ward-members.json",
+            "title": "JSON"
           },
           {
-            "url": "week05/activity2.html",
-            "title": "Dynamic Content"
+            "url": "chamber/week05/prophets.html",
+            "title": "Fetch API"
           }
         ]
       }
