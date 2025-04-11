@@ -11,3 +11,21 @@ body.dark-mode a {
 body.dark-mode header {
     background-color: #222;
 }
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .header, .dark-mode .nav-menu {
+    background-color: #333;
+}
+
+.dark-mode .nav-menu a {
+    color: #fff;
+}
+
+#weather, #weather-condition {
+    font-weight: bold;
+    color: #2196F3;
+}

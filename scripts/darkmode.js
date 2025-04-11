@@ -7,3 +7,14 @@ darkModeButton.addEventListener('click', function() {
     darkModeButton.textContent = body.classList.contains('dark-mode') ? '🌞' : '🌙'; 
 });
 
+
+darkModeButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+});
+
+// Check if dark mode is already enabled in the system
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    body.classList.add('dark-mode');
+}
+
+

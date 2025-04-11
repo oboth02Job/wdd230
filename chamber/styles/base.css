@@ -215,7 +215,7 @@ input[type="submit"]:hover {
   }
   
   .member-card, .member-list-item {
-    background: green;
+    background: #000;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;

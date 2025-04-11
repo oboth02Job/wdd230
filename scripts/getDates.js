@@ -21,7 +21,9 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active'); // Add/remove "active" class
 });
     
-
+// Footer Date and Last Modified Date
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('lastModified').textContent = `Last modified: ${document.lastModified}`;
 
 
     

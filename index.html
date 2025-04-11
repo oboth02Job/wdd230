@@ -24,22 +24,17 @@
     </header>
 
     <!-- Hamburger Button -->
-<button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
-    <span class="bar bar-top"></span>
-    <span class="bar bar-middle"></span>
-    <span class="bar bar-bottom"></span>
-    <span class="close-btn">&times;</span> <!-- X symbol for close -->
-</button>
-
-
+    <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+        <span class="bar bar-top"></span>
+        <span class="bar bar-middle"></span>
+        <span class="bar bar-bottom"></span>
+        <span class="close-btn">&times;</span> <!-- X symbol for close -->
+    </button>
 
     <!-- Navigation Menu -->
     <nav>
         <ul class="nav-menu" id="nav-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">Site Plan</a></li>
-            <li><a href="#">Form</a></li>
+            <!-- Links will be populated with JavaScript -->
         </ul>
     </nav>
 
@@ -48,24 +43,17 @@
 
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
-        <section>
-            <div class="learning-activities">
+        <section class="learning-activities">
                 <h2>Learning Activities</h2>
-                <ul>
-                    <li><a href="#">Week 01:</a></li>
-                    <li><a href="#">Week 02:</a></li>
-                    <li><a href="#">Week 03:</a></li>
-                    <li><a href="#">Week 04:</a></li>
-                    <li><a href="#">Week 05:</a></li>
-                    <li><a href="#">Week 06:</a></li>
-                </ul>
-            </div>
+                <div id="weeks-container"></div>
         </section>
 
         <section class="information-card">
             <div>
                 <h2>Information</h2>
                 <p>Current Weather: <span id="weather">Loading...</span></p>
+                <p>Weather Condition: <span id="weather-condition">Loading...</span></p>
+                <img id="weather-icon" alt="Current Weather Icon" width="50" height="50" />
                 <p>Visit count: <span id="visit-count">0</span></p>
                 <p>Today's Date: <span id="current-date"></span></p>
             </div>
@@ -80,7 +68,6 @@
             <div class="overlay-text">Brigham City Utah Temple</div>
         </div>
 
-        <!--Overlay-Label-->
         <p><a href="week03/lazyload.html"> View image lazy loading</a></p>
 
         <iframe
@@ -96,20 +83,16 @@
 
     <a href="week05/new-ward-members.json" target="_blank">View New Ward Members JSON File</a>
 
-
     <footer>
-        <p>© 2025 <span id="year"></span> Job, Uganda </p>
+        <p>© <span id="year"></span> Job, Uganda </p>
         <p id="lastModified"></p>
     </footer>
 
     <script src="scripts/getDates.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 </html>
-
-
-
-
-
 
