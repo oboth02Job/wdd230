@@ -205,7 +205,7 @@ input[type="submit"]:hover {
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: yellow;
   }
   
   #members-container {
@@ -248,5 +248,37 @@ input[type="submit"]:hover {
   
   .list-view .member-list-item {
     flex-direction: column;
+  }
+  
+
+ #members-container {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .grid-view {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .list-view {
+    display: block;
+  }
+  
+  .member-card {
+    background: #f24236;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .list-view .member-card {
+    margin-bottom: 1rem;
+  }
+  
+  .member-card img {
+    max-width: 100%;
+    height: auto;
   }
   
