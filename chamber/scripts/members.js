@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
             <p><strong>Phone:</strong> ${member.phone}</p>
             <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
             <p><strong>Membership Level:</strong> ${member.membership_level}</p>
-            <p><strong>Description:</strong> ${member.description}</p>
           </div>
         `;
   
@@ -73,7 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
         <p><strong>Phone:</strong> ${member.phone}</p>
         <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
         <p><strong>Membership Level:</strong> ${member.membership_level}</p>
-        <p>${member.description}</p>
       `;
   
       membersContainer.appendChild(card);

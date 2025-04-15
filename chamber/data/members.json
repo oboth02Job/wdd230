@@ -5,63 +5,56 @@
         "address": "123 Tech St, Silicon Valley, CA",
         "phone": "(555) 123-4567",
         "website": "https://techinnovations.com",
-        "image": "techinnovations.jpg",
-        "membership_level": "Gold",
-        "description": "Leading tech solutions provider."
+        "image": "techInnov.png",
+        "membership_level": "Gold"
       },
       {
         "name": "Green Gardens Ltd.",
         "address": "456 Green Rd, Springfield, IL",
         "phone": "(555) 987-6543",
         "website": "https://greengardens.com",
-        "image": "greengardens.jpg",
-        "membership_level": "Silver",
-        "description": "Organic gardening services."
+        "image": "greengardens.png",
+        "membership_level": "Silver"
       },
       {
         "name": "HealthPlus Medical",
         "address": "789 Health Ave, New York, NY",
         "phone": "(555) 321-8765",
         "website": "https://healthplus.com",
-        "image": "healthplus.jpg",
-        "membership_level": "Platinum",
-        "description": "Comprehensive healthcare services."
+        "image": "healthplus.png",
+        "membership_level": "Platinum"
       },
       {
         "name": "Alpha Manufacturing Co.",
         "address": "101 Alpha Rd, Dallas, TX",
         "phone": "(555) 432-1234",
         "website": "https://alphamanufacturing.com",
-        "image": "alphamanufacturing.jpg",
-        "membership_level": "Gold",
-        "description": "Precision manufacturing for industries."
+        "image": "alphaman.png",
+        "membership_level": "Gold"
       },
       {
         "name": "EcoBuild Construction",
         "address": "202 Eco Dr, Denver, CO",
         "phone": "(555) 654-7890",
         "website": "https://ecobuild.com",
-        "image": "ecobuild.jpg",
-        "membership_level": "Silver",
-        "description": "Sustainable construction services."
+        "image": "ecobuild.png",
+        "membership_level": "Silver"
       },
       {
         "name": "SmartTech Solutions",
         "address": "303 Smart Blvd, Boston, MA",
         "phone": "(555) 567-4321",
         "website": "https://smarttech.com",
-        "image": "smarttech.jpg",
-        "membership_level": "Bronze",
-        "description": "Tech consulting and solutions provider."
+        "image": "smarttech.png",
+        "membership_level": "Bronze"
       },
       {
         "name": "Quick Eats Restaurant",
         "address": "404 Quick St, Los Angeles, CA",
         "phone": "(555) 876-5432",
         "website": "https://quickeats.com",
-        "image": "quickeats.jpg",
-        "membership_level": "Platinum",
-        "description": "Fast food with quality ingredients."
+        "image": "quickeats.png",
+        "membership_level": "Platinum"
       }
     ]
   }
