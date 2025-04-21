@@ -1,27 +1,4 @@
 
-
-// Handle visit message and store last visit date in localStorage
-const visitMessage = document.getElementById('visit-message');
-const lastVisit = localStorage.getItem('lastVisit');
-
-if (!lastVisit) {
-    visitMessage.innerHTML = "Welcome! Let us know if you have any questions.";
-    localStorage.setItem('lastVisit', Date.now());
-} else {
-    const lastVisitDate = new Date(parseInt(lastVisit));
-    const currentDate = new Date();
-    const diffTime = Math.abs(currentDate - lastVisitDate);
-    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-    
-    if (diffDays < 1) {
-        visitMessage.innerHTML = "Back so soon! Awesome!";
-    } else {
-        visitMessage.innerHTML = `You last visited ${diffDays} day${diffDays > 1 ? 's' : ''} ago.`;
-    }
-
-    localStorage.setItem('lastVisit', Date.now());
-}
-
 // Lazy loading images
 const lazyImages = document.querySelectorAll('.lazyload');
 
@@ -37,4 +14,20 @@ function lazyLoadImages() {
 window.addEventListener('scroll', lazyLoadImages);
 window.addEventListener('resize', lazyLoadImages);
 lazyLoadImages();
+
+
+// Handle visit message and store last visit date in localStorage
+const messageContainer = document.getElementById('visit-message');
+const lastVisit = localStorage.getItem('lastVisit');
+const currentVisit = Date.now();
+
+if (lastVisit) {
+    const daysBetween = Math.floor((currentVisit - lastVisit) / (1000 * 60 * 60 * 24));
+    messageContainer.textContent = `Welcome back! It's been ${daysBetween} day(s) since your last visit.`;
+} else {
+    messageContainer.textContent = 'Welcome! This is your first visit.';
+}
+
+localStorage.setItem('lastVisit', currentVisit);
+
 
